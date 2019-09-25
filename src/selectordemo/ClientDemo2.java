@@ -10,6 +10,7 @@ public class ClientDemo2 {
         SocketChannel socketChannel = SocketChannel.open(new InetSocketAddress("localhost",8888));
 
         while (true){
+            Thread.sleep(2000);
             boolean temp = socketChannel.isConnected();
             if(temp){
                 System.out.println(temp);
